@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="bg-video">
+        <source id="video-source" src="video1.mp4" type="video/mp4">
+    </video>
+
+    <img src="gif1.gif" id="bg-gif" style="display: none;">
+
+    <select id="theme-selector">
+        <option value="morning" data-video="video1.mp4" data-gif="gif1.gif">Calm Life</option>
+        <option value="rain" data-video="video2.mp4" data-gif="gif2.gif">Rainy Study</option>
+        <option value="sunset" data-video="video3.mp4" data-gif="gif3.gif">Sunset</option>
+        <option value="village" data-video="video4.mp4" data-gif="gif4.gif">Village Life</option>
+        <option value="night" data-video="video5.mp4" data-gif="gif5.gif">Night Study</option>
+
+    </select>
+
+    <div class="mode-controls">
+        <button id="mode-timer">Timer Only</button>
+        <button id="mode-gif">GIF Mode</button>
+        <button id="mode-video">Video Mode</button>
+    </div>
+
+    <div class="time-container">
+        <div id="time">00:25:00</div>
+        <input type="number" id="hours" min="1" placeholder="Hours">
+        <input type="number" id="minutes" min="20" placeholder="Minutes">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div id="end-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+        <h2>Time's Up!</h2>
+        <p>Time's up! Take a break ✨</p>
+        <button id="close-modal">Continue</button>
+    </div>
+</div>
+
+<audio id="end-sound" src="bell.mp3" preload="auto"></audio>
+
+<div id="spotify-container" class="hidden">
+    <div id="spotify-input-area">
+        <input type="text" id="spotify-url" placeholder="Paste Spotify Playlist URL">
+        <button id="load-spotify">Load</button>
+    </div>
+    <iframe id="spotify-iframe" style="border-radius:12px" src="https://open.spotify.com/" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<button id="toggle-spotify">🎵</button>
+<button id="mute-btn">🔇</button>
+
+</body>
+</html>
