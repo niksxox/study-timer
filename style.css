@@ -1,0 +1,235 @@
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.time-container {
+    position: relative;
+    background-color: rgba(239, 172, 234, 0.89);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    z-index: 1;
+    max-width: 300px;
+    margin: 5% auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+#time {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+input[type="number"] {
+    width: 60px;
+    margin: 0.3rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: #f07386f7;
+    color: white;
+    transition: opacity 0.2s;
+}
+    
+button:hover {
+    opacity: 0.85;
+}
+
+button.morning { background: #FFDAB9; color: #000; }
+button.rain { background: #87CEFA; color: #fff; }
+button.sunset { background: linear-gradient(45deg, #FF7E5F, #FEB47B); color: #fff; }
+button.village { background: #228B22; color: #fff; }
+button.night { background: #2C3E50; color: #fff; text-shadow: 0 0 5px #fff; }
+
+@media (max-width: 500px) {
+  .time-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  #time {
+    font-size: 2.2rem;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    padding: 0.4rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@keyframes glow {
+    0%{
+        transform: scale(1);
+        text-shadow: 0 0 5px #ffb6c1;
+    }
+    50% {
+        transform: scale(1.1);
+        text-shadow: 0 0 20px #ff69b4;
+    }
+    100%{
+        transform: scale(1);
+        text-shadow: 0 0 5px #ffb6c1;
+    }
+}
+
+.glow {
+    animation: glow 1s ease-in-out;
+}
+
+#bg-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.mode-controls {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#close-modal {
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#toggle-spotify {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    z-index: 101;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f07386f7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#toggle-spotify:hover {
+    opacity: 0.85;
+}
+
+#spotify-container {
+    position: fixed;
+    bottom: 90px; 
+    right: 20px;
+    width: 300px;
+    height: 380px;
+    z-index: 101;
+    transition: opacity 0.3s ease;
+}
+
+#spotify-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #333; 
+    border-radius: 12px 12px 0 0; 
+}
+
+#spotify-url {
+    flex-grow: 1; 
+    border: 1px solid #555;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+#load-spotify {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #1DB954; 
+    color: white;
+    font-weight: bold;
+}
+
+
+#mute-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    z-index: 101;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f07386f7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#mute-btn:hover {
+    opacity: 0.85;
+}
