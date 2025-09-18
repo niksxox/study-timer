@@ -6,7 +6,7 @@ A cozy corner of the internet to help you focus, relax, and study effectively. à
 </div>
 
 <p align="center">
-<img src="https://www.google.com/search?q=https://placehold.co/800x400/ffe4e1/ff69b4%3Ftext%3DYour%2BApp%2BScreenshot%2BHere" alt="A screenshot of the study timer in action" style="border-radius: 15px;"/>
+<img src="Screenshot 2025-09-15 025842" alt="A screenshot of the study timer in action" style="border-radius: 15px;"/>
 </p>
 
 âœ¨ About The Project
