@@ -55,7 +55,7 @@ button:hover {
 button.morning { background: #FFDAB9; color: #000; }
 button.rain { background: #87CEFA; color: #fff; }
 button.sunset { background: linear-gradient(45deg, #FF7E5F, #FEB47B); color: #fff; }
-button.village { background: #228B22; color: #fff; }
+button.village { background: #8FBC8F; color: #fff; }
 button.night { background: #2C3E50; color: #fff; text-shadow: 0 0 5px #fff; }
 
 @media (max-width: 500px) {
