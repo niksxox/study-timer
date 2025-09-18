@@ -29,8 +29,7 @@ Features 🎀
 You can try out the live version of the project right here!
 
 ➡️ Click here to visit the live site!
-
-(Don't forget to replace your-username with your actual GitHub username in the link!)
+https://niksxox.github.io/study-timer/
 
 🛠️ Built With
 This project was brought to life with a sprinkle of love and these technologies:
@@ -46,3 +45,5 @@ JavaScript (ES6)
 Happy studying! ( ´ ▽ ` )ﾉ
 
 </div>
+
+!NONE OF THE VIDEOS/EDITS/GIFS ARE MINE!
