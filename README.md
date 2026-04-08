@@ -32,7 +32,7 @@ You can try out the live version of the project right here!
 https://niksxox.github.io/study-timer/
 
 🛠️ Built With
-This project was brought to life with a sprinkle of love and these technologies:
+This project was brought to life by these languages:
 
 HTML5
 
