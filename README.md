@@ -23,7 +23,7 @@ Features 🎀
 
 🔊 Audio Controls: Unmute the background videos to add another layer of ambiance to your session.
 
-🎉 Custom Alerts: Get a cute, non-intrusive pop-up and a pleasant bell sound when your time is up.
+🎉 Custom Alerts: Get a cute, non-intrusive pop-up and a bell sound when your time is up.
 
 🚀 Live Demo
 You can try out the live version of the project right here!
